@@ -5,6 +5,7 @@ applications:
     - https://github.com/cloudfoundry/go-buildpack
   memory: 128M
   disk_quota: 128M
+  health-check-type: process
   instances: 1
   env:
     GOPACKAGENAME: producer
