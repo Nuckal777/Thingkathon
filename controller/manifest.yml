@@ -1,0 +1,7 @@
+applications:
+- name: cobweb-controller
+  buildpacks:
+    - https://github.com/cloudfoundry/python-buildpack
+  memory: 128M
+  disk_quota: 128M
+  instances: 1
