@@ -33,7 +33,8 @@ func calcOutput(basePower float64, t time.Time) float64 {
 	if secs < 21600 || secs > 64800 {
 		return 0
 	}
-	return basePower * -math.Cos(float64(secs)/86400.0*math.Pi*2.0)
+	x := (float64(secs) - 21600) / 43200
+	return basePower * (16*math.Pow(x, 4) - 32*math.Pow(x, 3) + 16*math.Pow(x, 2))
 }
 
 func writeProduction(id uint32, prod float64, ts time.Time) []byte {

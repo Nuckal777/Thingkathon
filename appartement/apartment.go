@@ -31,7 +31,7 @@ func main() {
 func calcConsumption(t time.Time) float64 {
 	h, m, s := t.Clock()
 	secs := h*3600 + m*60 + s
-	return 20 * -math.Sin(float64(secs)/86400.0*math.Pi*2.0)
+	return 20 + -5*math.Sin(float64(secs)/86400.0*math.Pi*2.0)
 }
 
 func writeConsumption(id uint32, consumption float64, ts time.Time) []byte {
