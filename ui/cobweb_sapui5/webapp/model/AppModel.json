@@ -1,0 +1,94 @@
+{
+	"appartments": [
+		{
+			"apartmentId": "1",
+			"apartmentName": "Wohnung 1"
+		},
+		{
+			"apartmentId": "2",
+			"apartmentName": "Wohnung 2"
+		},
+		{
+			"apartmentId": "3",
+			"apartmentName": "Wohnung 3"
+		},
+		{
+			"apartmentId": "4",
+			"apartmentName": "Wohnung 4"
+		}
+	],
+	"data": {
+		"dataPoints": [
+			{
+				"Date": "01\\01\\2019",
+				"OtherDate": "/Date(1551790757046)/",
+				"OtherDate01": "01.01.2019",
+				"external": 1.43,
+				"internal": 1.01
+			}, 
+			{
+				"Date": "01\\02\\2019",
+				"OtherDate": "/Date(1551790764246)/",
+				"OtherDate01": "01.02.2019",
+				"external": 1.47,
+				"internal": 0.88
+			}, 
+			{
+				"Date": "01\\03\\2019",
+				"OtherDate": "/Date(1551790767846)/",
+				"OtherDate01": "01.03.2019",
+				"external": 1.51,
+				"internal": 0.77
+			}, 
+			{
+				"Date": "01\\04\\2019",
+				"OtherDate": "/Date(1551790771446)/",
+				"OtherDate01": "01.04.2019",
+				"external": 1.51,
+				"internal": 1.11
+			}, 
+			{
+				"Date": "01\\05\\2019",
+				"OtherDate": "/Date(1551790775046)/",
+				"OtherDate01": "01.05.2019",
+				"external": 1.51,
+				"internal": 0.99
+			},
+			{
+				"Date": "01\\06\\2019",
+				"OtherDate": "/Date(1551790778646)/",
+				"OtherDate01": "01.06.2019",
+				"external": 1.51,
+				"internal": 1.11
+			}, 
+			{
+				"Date": "01\\07\\2019",
+				"OtherDate": "/Date(1551790782246)/",
+				"OtherDate01": "01.07.2019",
+				"external": 1.51,
+				"internal": 1.22
+			}, 
+			{
+				"Date": "01\\08\\2019",
+				"OtherDate": "/Date(1551790785846)/",
+				"OtherDate01": "01.08.2019",
+				"external": 1.51,
+				"internal": 1.33
+			}, 
+			{
+				"Date": "01\\09\\2019",
+				"OtherDate": "/Date(1551790789446)/",
+				"OtherDate01": "01.09.2019",
+				"external": 1.51,
+				"internal": 1.20
+			}, 
+			{
+				"Date": "01\\10\\2019",
+				"OtherDate": "/Date(1551790793046)/",
+				"OtherDate01": "01.10.2019",
+				"external": 1.51,
+				"internal": 1.01
+			}
+	    ]
+	}
+}
