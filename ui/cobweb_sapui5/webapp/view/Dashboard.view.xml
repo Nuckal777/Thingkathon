@@ -13,7 +13,7 @@
         width="100%" 
         vizType='timeseries_line'>
         <viz:dataset>
-            <viz.data:FlattenedDataset data="{/data/dataPoints/}">
+            <viz.data:FlattenedDataset data="{/dashboard/dataPoints/}">
                 <viz.data:dimensions>
                     <viz.data:DimensionDefinition name="OtherDate01"
                         value="{OtherDate01}" dataType="date"/>

@@ -8,8 +8,8 @@ sap.ui.define([
 			var oChart = this.byId("idVizFrame");
 			
 			oChart.setVizProperties({ 'title':{ 'text': 'Savings - Postplatz 1 in 01067'}});
-			oChart.setVizProperties({"valueAxis": { "title": {"text": "Savings in €"}}});
-			oChart.setVizProperties({"timeAxis": { "title": {"text": "Date"}}});
+			oChart.setVizProperties({"valueAxis": { "title": {"text": "Savings"}}});
+			oChart.setVizProperties({"timeAxis": { "title": {"text": "Month"}}});
 		},
 		
 		onSelectionChange: function(oEvent) {
