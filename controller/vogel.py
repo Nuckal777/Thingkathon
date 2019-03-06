@@ -18,7 +18,7 @@ def vogel(price, production, consumption):
         print(moves)
         print("price")
         print(price)
-        input("")
+        #input("")
     return moves
 
 # x-Richtung äußere Liste y-Richtung innere Liste
@@ -59,7 +59,7 @@ def select(price, production, consumption):
                     if target[y] < smallValue:
                         smallValue = target[y]
                         smallIndex = y
-        miny = y
+        miny = smallIndex
         finalx = diffx.index(maxdiffx)
         finaly = miny
     else:
@@ -94,9 +94,9 @@ def getRow(matrix, index):
 
 if __name__ == "__main__":
     print(twoMin([2,5,8,9,45,23]))
-    price = [[4,1],[2,3],[3,3]]
-    prod = [6,15,12]
-    con = [13,20]
+    price = [[4,1,5,6],[2,3,5,6],[3,3,2,2],[9,8,7,2]]
+    prod = [8,18,24, 9]
+    con = [19,25, 10,5]
     x,y = select(price, prod, con)
     print("selected")
     print(price[x][y])
