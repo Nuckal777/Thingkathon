@@ -1,0 +1,42 @@
+<mvc:View controllerName="thingkathon.cobweb_sapui5.controller.App" displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"
+	xmlns:tnt="sap.tnt" xmlns:f="sap.f" xmlns:viz.data="sap.viz.ui5.data">
+	<tnt:ToolPage id="app">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<tnt:content>
+					<Title text="COBWEB"/>
+					<ToolbarSpacer/>
+					<Button text="Hubert Smart" icon="sap-icon://customer">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="NeverOverflow"/>
+						</layoutData>
+					</Button>
+				</tnt:content>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:mainContents>
+			<IconTabBar stretchContentHeight="true" id="idIconTabBar" select="handleIconTabBarSelect" class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter id="dashboard" icon="sap-icon://area-chart" text="Dashboard" key="Dashboard">
+						<content>
+							<mvc:XMLView viewName="thingkathon.cobweb_sapui5.view.Dashboard"/>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator/>
+					<IconTabFilter icon="sap-icon://lead" text="Savings" key="Savings">
+						<content>
+							<mvc:XMLView viewName="thingkathon.cobweb_sapui5.view.Savings"/>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator/>
+					<IconTabFilter icon="sap-icon://SAP-icons-TNT/data-store" text="Storage" key="Storage">
+						<content>
+							<mvc:XMLView viewName="thingkathon.cobweb_sapui5.view.Storage"/>
+						</content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>

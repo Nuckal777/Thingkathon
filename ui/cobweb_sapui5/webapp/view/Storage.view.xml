@@ -1,0 +1,163 @@
+<mvc:View 
+	controllerName="thingkathon.cobweb_sapui5.controller.Storage" 
+	displayBlock="true" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:viz="sap.viz.ui5.controls" 
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:core="sap.ui.core" 
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:l="sap.ui.layout">
+	<l:VerticalLayout id="containerLayout" width="60%" >
+		<l:BlockLayout id="BlockLayout" background="Dashboard">
+			<l:BlockLayoutRow accentCells="Accent1" >
+				<l:BlockLayoutCell width="2">
+					<l:VerticalLayout width="100%">
+						<Title width="100%" text="Ampera" class="sapUiSmallMargin" level="H1" titleStyle="H1" >
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<Title width="100%" text="Reserve" class="sapUiSmallMargin" >
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<Slider value="30" width="100%" class="sapUiSmallMargin">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Slider>
+						<Title width="100%" text="Charge" class="sapUiSmallMargin" >
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<ProgressIndicator
+							width="100%"
+							class="sapUiSmallMargin"
+							percentValue="53.7"
+							displayValue="53.7%"
+							showValue="true"
+							state="None" >
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</ProgressIndicator>
+						<Button class="sapUiSmallMargin" width="100%" text="Start Loading" type="Accept">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Button>
+
+							<Title class="sapUiSmallMargin" text="€ 12.35" width="50%" level="H2" titleStyle="H2">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<Title class="sapUiSmallMargin" text="kWh 32.4" width="40%" level="H2" titleStyle="H2">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+
+						
+					</l:VerticalLayout>
+					<!--<FlexBox
+						direction="Column"
+						alignItems="Start">
+						<items>
+							<Title width="100%" text="Ampera" class="sapUiSmallMargin" >
+								<layoutData>
+									<FlexItemData growFactor="1" />
+								</layoutData>
+							</Title>
+							<Slider value="30" width="100%" class="sapUiSmallMargin">
+								<layoutData>
+									<FlexItemData growFactor="1" />
+								</layoutData>
+							</Slider>
+							<ProgressIndicator
+								width="100%"
+								class="sapUiSmallMargin"
+								percentValue="30"
+								displayValue="30%"
+								showValue="true"
+								state="None" >
+								<layoutData>
+									<FlexItemData growFactor="1" />
+								</layoutData>
+							</ProgressIndicator>
+							<Button class="sapUiSmallMargin" width="100%" text="Start Loading" type="Accept">
+								<layoutData>
+									<FlexItemData growFactor="1" />
+								</layoutData>
+							</Button>
+							<Text class="sapUiSmallMargin" text="€ 12.45" width="100%">
+								<layoutData>
+									<FlexItemData growFactor="1" />
+								</layoutData>
+							</Text>
+							<Text class="sapUiSmallMargin" text="KWh 32.4" width="100%">
+								<layoutData>
+									<FlexItemData growFactor="1" />
+								</layoutData>
+							</Text>
+						</items>
+					</FlexBox>-->
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell width="2">
+					<l:VerticalLayout width="100%">
+						<Title width="100%" text="E-Golf" class="sapUiSmallMargin" level="H1" titleStyle="H1">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<Title width="100%" text="Reserve" class="sapUiSmallMargin" >
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<Slider value="70" width="100%" class="sapUiSmallMargin">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Slider>
+						<Title width="100%" text="Charge" class="sapUiSmallMargin" >
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<ProgressIndicator
+							width="100%"
+							class="sapUiSmallMargin"
+							percentValue="5.2"
+							displayValue="5.2%"
+							showValue="true"
+							state="None" >
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</ProgressIndicator>
+						<Button class="sapUiSmallMargin" width="100%" text="Start Loading" type="Accept">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Button>
+						<Title class="sapUiSmallMargin" text="€ 2.42" width="100%" level="H2" titleStyle="H2">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+						<Title class="sapUiSmallMargin" text="kWh 5.4" width="100%" level="H2" titleStyle="H2">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Title>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+	</l:VerticalLayout>
+	
+	</mvc:View>
