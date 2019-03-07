@@ -2,9 +2,7 @@ from sqlalchemy import Column, Integer, Float, String, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
-
 Model = declarative_base()
-
 
 class Apartment(Model):
     __tablename__ = 'apartment'
@@ -12,6 +10,13 @@ class Apartment(Model):
     id = Column(Integer, primary_key=True)
     name = Column(String(255), nullable=False)
     owners = relationship('Ownership')
+
+    def json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'owners': [owner.apartment_id for owner in self.owners]
+        }
 
 
 class Producer(Model):
@@ -24,6 +29,12 @@ class Producer(Model):
 
     owners = relationship("Ownership")
 
+    def json(self): 
+        return {
+            "producerId": self.id,
+            "lifetime": self.lifetime,
+            "power": self.power            
+        }
 
 class Production(Model):
     __tablename__ = 'production'
@@ -36,6 +47,14 @@ class Production(Model):
     producer_id = Column(Integer, ForeignKey('producer.id'), nullable=False)
     producer = relationship('Producer', backref='production')
 
+    def json(self):
+        return {
+            "id": self.id,
+            "energy": self.energy,
+            "price": self.price,
+            "time": self.time
+
+        }
 
 class ElectricityPrice(Model):
     __tablename__ = 'electricity_price'
@@ -43,7 +62,6 @@ class ElectricityPrice(Model):
     id = Column(Integer, primary_key=True)
     price = Column(Float, nullable=False)
     time = Column(DateTime, nullable=False)
-
 
 class Ownership(Model):
     __tablename__ = 'ownership'
@@ -55,6 +73,13 @@ class Ownership(Model):
     producer = relationship('Producer')
 
     percentage = Column(Float, nullable=False)
+
+    def json(self):
+        return {
+            "apartmenId": self.apartment_id,
+            "producerId": self.producer_id,
+            "percentage": self.percentage
+        }
 
 
 class Storage(Model):
@@ -101,3 +126,13 @@ class Consumption(Model):
 
     apartment_id = Column(Integer, ForeignKey('apartment.id'), nullable=False)
     apartment = relationship('Apartment', backref='consumptions')
+
+    def json(self):
+        return {
+            "id": self.id,
+            "energy": self.energy,
+            "origin": self.origin,
+            "price": self.price,
+            "time": self.time,
+            "apartmentId": self.apartment_id
+        }

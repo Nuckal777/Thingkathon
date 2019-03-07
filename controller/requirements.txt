@@ -1,2 +1,4 @@
 sqlalchemy
 aio-pika
+flask
+jsonify
