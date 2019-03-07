@@ -9,7 +9,7 @@ applications:
   health-check-type: process
 # - name: cobweb-api
 #   buildpacks:
-#     - https://github.com/cloudfoundry/python-buildpack
+#     - https://github.com/cloudfoundrgit push origin coy/python-buildpack
 #   memory: 512M
 #   disk_quota: 512M
 #   instances: 1
