@@ -1,0 +1,58 @@
+<mvc:View controllerName="thingkathon.cobweb_sapui5.controller.Dashboard" height="100%" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:core="sap.ui.core" xmlns:viz.data="sap.viz.ui5.data" xmlns:l="sap.ui.layout"
+	xmlns:lf="sap.ui.layout.form" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<l:Splitter height="100%">
+		<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height="100%" width="100%" vizType='timeseries_line'>
+			<viz:dataset>
+				<viz.data:FlattenedDataset data="{/dashboard/areaChart/}">
+					<viz.data:dimensions>
+						<viz.data:DimensionDefinition name="Date" value="{OtherDate01}" dataType="date"/>
+					</viz.data:dimensions>
+					<viz.data:measures>
+						<viz.data:MeasureDefinition name="External" value="{external}"/>
+					</viz.data:measures>
+					<viz.data:measures>
+						<viz.data:MeasureDefinition name="Battery" value="{battery}"/>
+					</viz.data:measures>
+					<viz.data:measures>
+						<viz.data:MeasureDefinition name="Solar" value="{solar}"/>
+					</viz.data:measures>
+				</viz.data:FlattenedDataset>
+			</viz:dataset>
+			<viz:feeds>
+				<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="External"/>
+				<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Battery"/>
+				<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Solar"/>
+				<viz.feeds:FeedItem uid="timeAxis" type="Dimension" values="Date"/>
+			</viz:feeds>
+		</viz:VizFrame>
+		<l:Grid defaultIndent="L0 M0 S0" defaultSpan="XL6 L6 M6 S6" position="Left" width="100%" containerQuery="false" hSpacing="1" vSpacing="1"
+			visible="true" class="sapUiSmallMargin">
+			<!--<l:VerticalLayout width="100%">-->
+			<l:layoutData><l:SplitterLayoutData size="30%" resizable="false"/></l:layoutData>
+			<l:content>
+				<GenericTile header="Market" subheader="DREWAG" frameType="OneByOne">
+					<TileContent unit="Euro" footer="">
+						<NumericContent value="0.29" icon="sap-icon://line-charts"/>
+					</TileContent>
+				</GenericTile>
+				<GenericTile header="Savings" subheader="Total" frameType="OneByOne">
+					<TileContent unit="Euro" footer="last 30 days">
+						<NumericContent value="11.13" icon="sap-icon://lead" valueColor="Good"/>
+					</TileContent>
+				</GenericTile>
+				<GenericTile header="Charging" subheader="E-Golf" frameType="OneByOne">
+					<TileContent unit="" footer="5h remaining">
+						<NumericContent value="5.2%" icon="sap-icon://car-rental" valueColor="Error"/>
+					</TileContent>
+				</GenericTile>
+				<GenericTile header="Consumption" subheader="Total" frameType="OneByOne">
+					<TileContent unit="kWh" footer="last 30 days">
+						<NumericContent value="365" icon="sap-icon://e-care" valueColor="Good"/>
+					</TileContent>
+				</GenericTile>
+			</l:content>
+			<!--</l:VerticalLayout>-->
+		</l:Grid>
+	</l:Splitter>
+</mvc:View>

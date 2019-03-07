@@ -1,0 +1,32 @@
+ID: cobwebui
+_schema-version: '2.1'
+description: Ui for Cobweb
+version: 0.0.1
+
+modules:
+ - name: cobweb_sapui5
+   type: html5
+   path: cobweb_sapui5
+   parameters:
+      disk-quota: 256M
+      memory: 256M
+   build-parameters:
+      builder: grunt
+   requires:
+    - name: uaa_cobwebui
+    - name: dest_cobwebui
+
+resources:
+ - name: uaa_cobwebui
+   parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+   type: org.cloudfoundry.managed-service
+
+ - name: dest_cobwebui
+   parameters:
+      service-plan: lite
+      service: destination
+   type: org.cloudfoundry.managed-service
+

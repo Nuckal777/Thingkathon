@@ -1,6 +1,6 @@
 applications:
-- name: cobweb-appartment
-  command: ./bin/apartment
+- name: cobweb-storage
+  command: ./bin/storage
   buildpacks:
     - https://github.com/cloudfoundry/go-buildpack
   memory: 128M
@@ -8,4 +8,4 @@ applications:
   health-check-type: process
   instances: 1
   env:
-    GOPACKAGENAME: apartment
+    GOPACKAGENAME: storage
