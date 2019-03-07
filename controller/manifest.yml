@@ -2,6 +2,15 @@ applications:
 - name: cobweb-controller
   buildpacks:
     - https://github.com/cloudfoundry/python-buildpack
-  memory: 128M
-  disk_quota: 128M
+  memory: 512M
+  disk_quota: 512M
   instances: 1
+  command: python -m cobweb
+  health-check-type: process
+# - name: cobweb-api
+#   buildpacks:
+#     - https://github.com/cloudfoundry/python-buildpack
+#   memory: 512M
+#   disk_quota: 512M
+#   instances: 1
+#   command: gunicorn -b 0.0.0.0:$PORT cobweb.app:app
