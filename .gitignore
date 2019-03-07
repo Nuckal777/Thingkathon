@@ -1,5 +1,6 @@
 __pycache__/
 node_modules/
+*.db
 fioriHtmlRunner.html
 .*/fioriHtmlRunner.html
 visual_ext_index.html
