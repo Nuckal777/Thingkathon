@@ -66,7 +66,7 @@ def main():
 
     loop = asyncio.get_event_loop()
     
-    connection = loop.run_until_complete(controller.boot(loop, 'amqp://guest:guest@127.0.0.1/', session_factory))
+    connection = loop.run_until_complete(controller.boot(loop, 'amqp://KVK-T3NDRHs9k9eF:fz9CGA1xCu3zqWCK@10.11.241.45:49977/', session_factory))
 
     try:
         loop.run_forever()
