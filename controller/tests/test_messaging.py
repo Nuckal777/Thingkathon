@@ -48,7 +48,7 @@ async def test_on_consumption(event_loop, amq_url, session_factory, channel):
     message = Message(payload, delivery_mode=DeliveryMode.PERSISTENT)
 
     connection = await boot(event_loop, amq_url, session_factory)
-    await channel.default_exchange.publish(message, routing_key='consumption')
+    await channel.default_exchange.publish(message, routing_key='apartment')
     await asyncio.sleep(0.1)
     await connection.close()
 
@@ -76,11 +76,11 @@ async def test_on_storage_status(event_loop, amq_url, session_factory, channel):
                         apartment_id=1))
     session.commit()
 
-    payload = struct.pack('!IdQ', storage_id, capacity, int(now.timestamp() * 1e9))
+    payload = struct.pack('!IdQI', storage_id, capacity, int(now.timestamp() * 1e9), 0)
     message = Message(payload, delivery_mode=DeliveryMode.PERSISTENT)
 
     connection = await boot(event_loop, amq_url, session_factory)
-    await channel.default_exchange.publish(message, routing_key='storage_status')
+    await channel.default_exchange.publish(message, routing_key='status')
     await asyncio.sleep(0.1)
     await connection.close()
 

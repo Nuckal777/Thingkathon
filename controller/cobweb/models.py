@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, Float, String, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, Float, String, DateTime, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -62,9 +62,10 @@ class Storage(Model):
 
     id = Column(Integer, primary_key=True)
     max_capacity = Column(Float, nullable=False)
-    capacity = Column(Float, nullable=False)
-    price = Column(Float, nullable=False)
-    source = Column(String(63), nullable=False)
+    capacity = Column(Float, default=0, nullable=False)
+    price = Column(Float, default=0, nullable=False)
+    source = Column(String(63), default='external', nullable=False)
+    available = Column(Boolean, default=True, nullable=False)
 
     apartment_id = Column(Integer, ForeignKey('apartment.id'), nullable=False)
     apartment = relationship('Apartment', backref='storages')

@@ -1,19 +1,28 @@
-import aio_pika
 import struct
+import logging
 from functools import wraps
 import datetime
+import aio_pika
 from . import models
+from . import vogel
 
 
 external_price = 0.29
+logger = logging.getLogger(__name__)
 
 
-def cal_internal_price():
+def calc_internal_price():
     return 0.08
 
 
 async def on_production(message, session):
-    producer_id, energy, nanosecs = struct.unpack('!IdQ', message.body)
+    try:
+        producer_id, energy, nanosecs = struct.unpack('!IdQ', message.body)
+    except struct.error as err:
+        logger.error("Invalid production message: %r", message.body)
+        message.ack()
+        return
+        
     timestamp = datetime.datetime.fromtimestamp(nanosecs / 1e9)
 
     producer = session.query(models.Producer).get(producer_id)
@@ -23,17 +32,25 @@ async def on_production(message, session):
         return
 
     production = models.Production(energy=energy,
-                                   price=cal_internal_price(),
+                                   price=calc_internal_price(),
                                    time=timestamp,
                                    producer=producer)
     session.add(production)
     session.commit()
 
+    logger.debug("Recv %r", production)
+
     message.ack()
 
 
 async def on_consumption(message, session):
-    apartment_id, energy, nanosecs = struct.unpack('!IdQ', message.body)
+    try:
+        apartment_id, energy, nanosecs = struct.unpack('!IdQ', message.body)
+    except struct.error as err:
+        logger.error("Invalid consumption message: %r", message.body)
+        message.ack()
+        return
+
     timestamp = datetime.datetime.fromtimestamp(nanosecs / 1e9)
 
     apartment = session.query(models.Apartment).get(apartment_id)
@@ -50,11 +67,13 @@ async def on_consumption(message, session):
     session.add(consumption)
     session.commit()
 
+    logger.debug("%r", consumption)
+
     message.ack()
 
 
 async def on_storage_status(message, session):
-    storage_id, capacity, nanosecs = struct.unpack('!IdQ', message.body)
+    storage_id, capacity, nanosecs, available = struct.unpack('!IdQI', message.body)
     timestamp = datetime.datetime.fromtimestamp(nanosecs / 1e9)
 
     storage = session.query(models.Storage).get(storage_id)
@@ -69,13 +88,15 @@ async def on_storage_status(message, session):
     if storage.source == 'external':
         storage.price += external_price * capacity
     else:
-        storage.price += cal_internal_price() * capacity
+        storage.price += calc_internal_price() * capacity
 
     charge = models.Charge(capacity=capacity,
                            time=timestamp,
                            storage=storage)
     session.add(charge)
     session.commit()
+
+    logger.debug("%r", charge)
 
     message.ack()
 
@@ -88,6 +109,8 @@ def wrap_session(func, session_factory):
 
 
 async def boot(loop, amqp, session_factory):
+    logger.debug("Booting controller queue consumers")
+
     # Open connection
     connection = await aio_pika.connect_robust(amqp, loop=loop)
 
@@ -97,21 +120,23 @@ async def boot(loop, amqp, session_factory):
     # Declare all queues
     producer = await channel.declare_queue('producer',
                                              durable=True,
-                                             auto_delete=True)
-    consumption = await channel.declare_queue('consumption',
+                                             auto_delete=False)
+    consumption = await channel.declare_queue('apartment',
                                              durable=True,
-                                             auto_delete=True)
-    storage_status = await channel.declare_queue('storage_status',
+                                             auto_delete=False)
+    storage_status = await channel.declare_queue('status',
                                              durable=True,
-                                             auto_delete=True)
-    # change_charge = await channel.declare_queue('change_charge',
+                                             auto_delete=False)
+    # change_charge = await channel.declare_queue('charge',
     #                                          durable=True,
-    #                                          auto_delete=True)
+    #                                          auto_delete=False)
 
     # Register message handlers
     await producer.consume(wrap_session(on_production, session_factory))
     await consumption.consume(wrap_session(on_consumption, session_factory))
     await storage_status.consume(wrap_session(on_storage_status, session_factory))
     # await change_charge.consume(wrap_session(on_change_charge, session_factory))
+
+    logger.debug("All queue consumers up")
 
     return connection
