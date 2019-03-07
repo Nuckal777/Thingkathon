@@ -1,0 +1,39 @@
+<mvc:View 
+	controllerName="thingkathon.cobweb_sapui5.controller.Savings" 
+	displayBlock="true" 
+	height="100%"
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:viz="sap.viz.ui5.controls" 
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:core="sap.ui.core" 
+    xmlns:viz.data="sap.viz.ui5.data">
+	<viz:VizFrame 
+		id="idVizFrame" 
+		uiConfig="{applicationSet:'fiori'}"
+        height="100%" 
+        width="100%" 
+        vizType='timeseries_line'>
+        <viz:dataset>
+            <viz.data:FlattenedDataset data="{/savings/profit/}">
+                <viz.data:dimensions>
+                    <viz.data:DimensionDefinition name="OtherDate01"
+                        value="{OtherDate01}" dataType="date"/>
+                </viz.data:dimensions>
+                
+                <viz.data:measures>
+                    <viz.data:MeasureDefinition name="internal"
+                        value="{profit}" />
+                </viz.data:measures>
+                
+            </viz.data:FlattenedDataset>
+        </viz:dataset>
+
+        <viz:feeds>
+            <viz.feeds:FeedItem uid="valueAxis" type="Measure"
+                values="internal" />
+            <viz.feeds:FeedItem uid="timeAxis" type="Dimension"
+                values="OtherDate01" />
+        </viz:feeds>
+    </viz:VizFrame>
+</mvc:View>

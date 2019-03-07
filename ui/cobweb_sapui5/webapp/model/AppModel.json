@@ -1,0 +1,772 @@
+{
+    "dashboard": {
+        "areaChart": [
+            {
+                "OtherDate01": "02.01.2019",
+                "battery": 4.6,
+                "external": 3.85,
+                "solar": 5.1
+            },
+            {
+                "OtherDate01": "02.02.2019",
+                "battery": 4.8,
+                "external": 3.8,
+                "solar": 5.2
+            },
+            {
+                "OtherDate01": "02.03.2019",
+                "battery": 4,
+                "external": 3,
+                "solar": 5
+            },
+            {
+                "OtherDate01": "02.04.2019",
+                "battery": 3.4,
+                "external": 2.65,
+                "solar": 4.9
+            },
+            {
+                "OtherDate01": "02.05.2019",
+                "battery": 4.2,
+                "external": 3.2,
+                "solar": 4.4
+            },
+            {
+                "OtherDate01": "02.06.2019",
+                "battery": 3.5,
+                "external": 3,
+                "solar": 4.0
+            },
+            {
+                "OtherDate01": "02.07.2019",
+                "battery": 4,
+                "external": 3,
+                "solar": 4.3
+            },
+            {
+                "OtherDate01": "02.08.2019",
+                "battery": 4.6000000000000005,
+                "external": 3.7,
+                "solar": 4.7
+            },
+            {
+                "OtherDate01": "02.09.2019",
+                "battery": 4.6,
+                "external": 3,
+                "solar": 5.0
+            },
+            {
+                "OtherDate01": "02.10.2019",
+                "battery": 4.2,
+                "external": 3.4,
+                "solar": 5.4
+            },
+            {
+                "OtherDate01": "02.11.2019",
+                "battery": 4.4,
+                "external": 3.9,
+                "solar": 5.9
+            },
+            {
+                "OtherDate01": "02.12.2019",
+                "battery": 4.2,
+                "external": 3.2,
+                "solar": 5.7
+            },
+            {
+                "OtherDate01": "02.13.2019",
+                "battery": 4.3,
+                "external": 4.1,
+                "solar": 5.6
+            },
+            {
+                "OtherDate01": "02.14.2019",
+                "battery": 4.8,
+                "external": 4,
+                "solar": 5.3999999999999995
+            },
+            {
+                "OtherDate01": "02.15.2019",
+                "battery": 4.9,
+                "external": 3.9,
+                "solar": 5.4
+            },
+            {
+                "OtherDate01": "02.16.2019",
+                "battery": 4.7,
+                "external": 3.9,
+                "solar": 5.4
+            },
+            {
+                "OtherDate01": "02.17.2019",
+                "battery": 4.7,
+                "external": 4.2,
+                "solar": 5.2
+            },
+            {
+                "OtherDate01": "02.18.2019",
+                "battery": 4.800000000000001,
+                "external": 4.4,
+                "solar": 5.1000000000000005
+            },
+            {
+                "OtherDate01": "02.19.2019",
+                "battery": 4.8,
+                "external": 4.5,
+                "solar": 5.0
+            },
+            {
+                "OtherDate01": "02.20.2019",
+                "battery": 5.0,
+                "external": 4.6,
+                "solar": 5.1
+            },
+            {
+                "OtherDate01": "02.21.2019",
+                "battery": 4.5,
+                "external": 3.9,
+                "solar": 4.9
+            },
+            {
+                "OtherDate01": "02.22.2019",
+                "battery": 3.6,
+                "external": 1.6,
+                "solar": 5.1
+            },
+            {
+                "OtherDate01": "02.23.2019",
+                "battery": 3.9,
+                "external": 0.9,
+                "solar": 5.2
+            },
+            {
+                "OtherDate01": "02.24.2019",
+                "battery": 3.9,
+                "external": 1.6,
+                "solar": 5.1
+            },
+            {
+                "OtherDate01": "02.25.2019",
+                "battery": 3.5999999999999996,
+                "external": 1.9,
+                "solar": 5.1
+            },
+            {
+                "OtherDate01": "02.26.2019",
+                "battery": 4.0,
+                "external": 2.7,
+                "solar": 5.2
+            },
+            {
+                "OtherDate01": "02.27.2019",
+                "battery": 4.2,
+                "external": 2.9,
+                "solar": 5.9
+            },
+            {
+                "OtherDate01": "02.28.2019",
+                "battery": 4,
+                "external": 2,
+                "solar": 5.5
+            }
+        ],
+        "dataPoints": [
+            {
+                "OtherDate01": "02.01.2019",
+                "battery": 0.75,
+                "external": 3.85,
+                "internal": 1.25,
+                "solar": 0.5,
+                "total": 5.1
+            },
+            {
+                "OtherDate01": "02.02.2019",
+                "battery": 1.0,
+                "external": 3.8,
+                "internal": 1.4,
+                "solar": 0.4,
+                "total": 5.2
+            },
+            {
+                "OtherDate01": "02.03.2019",
+                "battery": 1,
+                "external": 3,
+                "internal": 2,
+                "solar": 1,
+                "total": 5.0
+            },
+            {
+                "OtherDate01": "02.04.2019",
+                "battery": 0.75,
+                "external": 2.65,
+                "internal": 2.25,
+                "solar": 1.5,
+                "total": 4.9
+            },
+            {
+                "OtherDate01": "02.05.2019",
+                "battery": 1,
+                "external": 3.2,
+                "internal": 1.2,
+                "solar": 0.2,
+                "total": 4.4
+            },
+            {
+                "OtherDate01": "02.06.2019",
+                "battery": 0.5,
+                "external": 3,
+                "internal": 1,
+                "solar": 0.5,
+                "total": 4.0
+            },
+            {
+                "OtherDate01": "02.07.2019",
+                "battery": 1,
+                "external": 3,
+                "internal": 1.3,
+                "solar": 0.3,
+                "total": 4.3
+            },
+            {
+                "OtherDate01": "02.08.2019",
+                "battery": 0.9,
+                "external": 3.7,
+                "internal": 1,
+                "solar": 0.1,
+                "total": 4.7
+            },
+            {
+                "OtherDate01": "02.09.2019",
+                "battery": 1.6,
+                "external": 3,
+                "internal": 2,
+                "solar": 0.4,
+                "total": 5.0
+            },
+            {
+                "OtherDate01": "02.10.2019",
+                "battery": 0.8,
+                "external": 3.4,
+                "internal": 2,
+                "solar": 1.2,
+                "total": 5.4
+            },
+            {
+                "OtherDate01": "02.11.2019",
+                "battery": 0.5,
+                "external": 3.9,
+                "internal": 2,
+                "solar": 1.5,
+                "total": 5.9
+            },
+            {
+                "OtherDate01": "02.12.2019",
+                "battery": 1,
+                "external": 3.2,
+                "internal": 2.5,
+                "solar": 1.5,
+                "total": 5.7
+            },
+            {
+                "OtherDate01": "02.13.2019",
+                "battery": 0.2,
+                "external": 4.1,
+                "internal": 1.5,
+                "solar": 1.3,
+                "total": 5.6
+            },
+            {
+                "OtherDate01": "02.14.2019",
+                "battery": 0.8,
+                "external": 4,
+                "internal": 1.4,
+                "solar": 0.6,
+                "total": 5.4
+            },
+            {
+                "OtherDate01": "02.15.2019",
+                "battery": 1,
+                "external": 3.9,
+                "internal": 1.5,
+                "solar": 0.5,
+                "total": 5.4
+            },
+            {
+                "OtherDate01": "02.16.2019",
+                "battery": 0.8,
+                "external": 3.9,
+                "internal": 1.5,
+                "solar": 0.7,
+                "total": 5.4
+            },
+            {
+                "OtherDate01": "02.17.2019",
+                "battery": 0.5,
+                "external": 4.2,
+                "internal": 1,
+                "solar": 0.5,
+                "total": 5.2
+            },
+            {
+                "OtherDate01": "02.18.2019",
+                "battery": 0.4,
+                "external": 4.4,
+                "internal": 0.7,
+                "solar": 0.3,
+                "total": 5.1
+            },
+            {
+                "OtherDate01": "02.19.2019",
+                "battery": 0.3,
+                "external": 4.5,
+                "internal": 0.5,
+                "solar": 0.2,
+                "total": 5
+            },
+            {
+                "OtherDate01": "02.20.2019",
+                "battery": 0.4,
+                "external": 4.6,
+                "internal": 0.5,
+                "solar": 0.1,
+                "total": 5.1
+            },
+            {
+                "OtherDate01": "02.21.2019",
+                "battery": 0.6,
+                "external": 3.9,
+                "internal": 1,
+                "solar": 0.4,
+                "total": 4.9
+            },
+            {
+                "OtherDate01": "02.22.2019",
+                "battery": 2,
+                "external": 1.6,
+                "internal": 3.5,
+                "solar": 1.5,
+                "total": 5.1
+            },
+            {
+                "OtherDate01": "02.23.2019",
+                "battery": 3,
+                "external": 0.9,
+                "internal": 4.3,
+                "solar": 1.3,
+                "total": 5.2
+            },
+            {
+                "OtherDate01": "02.24.2019",
+                "battery": 2.3,
+                "external": 1.6,
+                "internal": 3.5,
+                "solar": 1.2,
+                "total": 5.1
+            },
+            {
+                "OtherDate01": "02.25.2019",
+                "battery": 1.7,
+                "external": 1.9,
+                "internal": 3.2,
+                "solar": 1.5,
+                "total": 5.1
+            },
+            {
+                "OtherDate01": "02.26.2019",
+                "battery": 1.3,
+                "external": 2.7,
+                "internal": 2.5,
+                "solar": 1.2,
+                "total": 5.7
+            },
+            {
+                "OtherDate01": "02.27.2019",
+                "battery": 1.3,
+                "external": 2.9,
+                "internal": 3,
+                "solar": 1.7,
+                "total": 5.9
+            },
+            {
+                "OtherDate01": "02.28.2019",
+                "battery": 2,
+                "external": 2,
+                "internal": 3.5,
+                "solar": 1.5,
+                "total": 5.5
+            }
+        ],
+        "externalPrice": 0.29,
+        "totalSavings": 11.129999999999999
+    },
+    "savings": {
+        "dataPoints": [
+            {
+                "Date": "01\\01\\2019",
+                "OtherDate": "/Date(1551790757046)/",
+                "OtherDate01": "02.01.2019",
+                "external": 1.43,
+                "internal": 1.01
+            },
+            {
+                "Date": "01\\02\\2019",
+                "OtherDate": "/Date(1551790764246)/",
+                "OtherDate01": "02.02.2019",
+                "external": 1.47,
+                "internal": 0.88
+            },
+            {
+                "Date": "01\\03\\2019",
+                "OtherDate": "/Date(1551790767846)/",
+                "OtherDate01": "02.03.2019",
+                "external": 1.51,
+                "internal": 0.77
+            },
+            {
+                "Date": "01\\04\\2019",
+                "OtherDate": "/Date(1551790771446)/",
+                "OtherDate01": "02.04.2019",
+                "external": 1.51,
+                "internal": 1.11
+            },
+            {
+                "Date": "01\\05\\2019",
+                "OtherDate": "/Date(1551790775046)/",
+                "OtherDate01": "02.05.2019",
+                "external": 1.51,
+                "internal": 0.99
+            },
+            {
+                "Date": "01\\06\\2019",
+                "OtherDate": "/Date(1551790778646)/",
+                "OtherDate01": "02.06.2019",
+                "external": 1.51,
+                "internal": 1.11
+            },
+            {
+                "Date": "01\\07\\2019",
+                "OtherDate": "/Date(1551790782246)/",
+                "OtherDate01": "02.07.2019",
+                "external": 1.51,
+                "internal": 1.22
+            },
+            {
+                "Date": "01\\08\\2019",
+                "OtherDate": "/Date(1551790785846)/",
+                "OtherDate01": "02.08.2019",
+                "external": 1.51,
+                "internal": 1.33
+            },
+            {
+                "Date": "01\\09\\2019",
+                "OtherDate": "/Date(1551790789446)/",
+                "OtherDate01": "02.09.2019",
+                "external": 1.51,
+                "internal": 1.2
+            },
+            {
+                "Date": "01\\10\\2019",
+                "OtherDate": "/Date(1551790793046)/",
+                "OtherDate01": "02.10.2019",
+                "external": 1.51,
+                "internal": 1.01
+            },
+            {
+                "Date": "01\\01\\2019",
+                "OtherDate": "/Date(1551790757046)/",
+                "OtherDate01": "02.11.2019",
+                "external": 1.43,
+                "internal": 1.01
+            },
+            {
+                "Date": "01\\02\\2019",
+                "OtherDate": "/Date(1551790764246)/",
+                "OtherDate01": "02.12.2019",
+                "external": 1.47,
+                "internal": 0.88
+            },
+            {
+                "Date": "01\\03\\2019",
+                "OtherDate": "/Date(1551790767846)/",
+                "OtherDate01": "02.13.2019",
+                "external": 1.51,
+                "internal": 0.77
+            },
+            {
+                "Date": "01\\04\\2019",
+                "OtherDate": "/Date(1551790771446)/",
+                "OtherDate01": "02.14.2019",
+                "external": 1.51,
+                "internal": 1.11
+            },
+            {
+                "Date": "01\\05\\2019",
+                "OtherDate": "/Date(1551790775046)/",
+                "OtherDate01": "02.15.2019",
+                "external": 1.51,
+                "internal": 0.99
+            },
+            {
+                "Date": "01\\06\\2019",
+                "OtherDate": "/Date(1551790778646)/",
+                "OtherDate01": "02.16.2019",
+                "external": 1.51,
+                "internal": 1.11
+            },
+            {
+                "Date": "01\\07\\2019",
+                "OtherDate": "/Date(1551790782246)/",
+                "OtherDate01": "02.17.2019",
+                "external": 1.51,
+                "internal": 1.22
+            },
+            {
+                "Date": "01\\08\\2019",
+                "OtherDate": "/Date(1551790785846)/",
+                "OtherDate01": "02.18.2019",
+                "external": 1.51,
+                "internal": 1.33
+            },
+            {
+                "Date": "01\\09\\2019",
+                "OtherDate": "/Date(1551790789446)/",
+                "OtherDate01": "02.19.2019",
+                "external": 1.51,
+                "internal": 1.2
+            },
+            {
+                "Date": "01\\10\\2019",
+                "OtherDate": "/Date(1551790793046)/",
+                "OtherDate01": "02.20.2019",
+                "external": 1.51,
+                "internal": 1.01
+            },
+            {
+                "Date": "01\\01\\2019",
+                "OtherDate": "/Date(1551790757046)/",
+                "OtherDate01": "02.21.2019",
+                "external": 1.43,
+                "internal": 1.01
+            },
+            {
+                "Date": "01\\02\\2019",
+                "OtherDate": "/Date(1551790764246)/",
+                "OtherDate01": "02.22.2019",
+                "external": 1.47,
+                "internal": 0.88
+            },
+            {
+                "Date": "01\\03\\2019",
+                "OtherDate": "/Date(1551790767846)/",
+                "OtherDate01": "02.23.2019",
+                "external": 1.51,
+                "internal": 0.77
+            },
+            {
+                "Date": "01\\04\\2019",
+                "OtherDate": "/Date(1551790771446)/",
+                "OtherDate01": "02.24.2019",
+                "external": 1.51,
+                "internal": 1.11
+            },
+            {
+                "Date": "01\\05\\2019",
+                "OtherDate": "/Date(1551790775046)/",
+                "OtherDate01": "02.25.2019",
+                "external": 1.51,
+                "internal": 0.99
+            },
+            {
+                "Date": "01\\06\\2019",
+                "OtherDate": "/Date(1551790778646)/",
+                "OtherDate01": "02.26.2019",
+                "external": 1.51,
+                "internal": 1.11
+            },
+            {
+                "Date": "01\\07\\2019",
+                "OtherDate": "/Date(1551790782246)/",
+                "OtherDate01": "02.27.2019",
+                "external": 1.51,
+                "internal": 1.22
+            },
+            {
+                "Date": "01\\08\\2019",
+                "OtherDate": "/Date(1551790785846)/",
+                "OtherDate01": "02.28.2019",
+                "external": 1.51,
+                "internal": 1.33
+            }
+        ],
+        "profit": [
+            {
+                "Date": "01\\01\\2019",
+                "OtherDate": "/Date(1551790757046)/",
+                "OtherDate01": "02.01.2019",
+                "profit": 0.21209999999999996
+            },
+            {
+                "Date": "01\\02\\2019",
+                "OtherDate": "/Date(1551790764246)/",
+                "OtherDate01": "02.02.2019",
+                "profit": 0.18479999999999996
+            },
+            {
+                "Date": "01\\03\\2019",
+                "OtherDate": "/Date(1551790767846)/",
+                "OtherDate01": "02.03.2019",
+                "profit": 0.16169999999999998
+            },
+            {
+                "Date": "01\\04\\2019",
+                "OtherDate": "/Date(1551790771446)/",
+                "OtherDate01": "02.04.2019",
+                "profit": 0.23309999999999997
+            },
+            {
+                "Date": "01\\05\\2019",
+                "OtherDate": "/Date(1551790775046)/",
+                "OtherDate01": "02.05.2019",
+                "profit": 0.20789999999999997
+            },
+            {
+                "Date": "01\\06\\2019",
+                "OtherDate": "/Date(1551790778646)/",
+                "OtherDate01": "02.06.2019",
+                "profit": 0.23309999999999997
+            },
+            {
+                "Date": "01\\07\\2019",
+                "OtherDate": "/Date(1551790782246)/",
+                "OtherDate01": "02.07.2019",
+                "profit": 0.25619999999999993
+            },
+            {
+                "Date": "01\\08\\2019",
+                "OtherDate": "/Date(1551790785846)/",
+                "OtherDate01": "02.08.2019",
+                "profit": 0.2793
+            },
+            {
+                "Date": "01\\09\\2019",
+                "OtherDate": "/Date(1551790789446)/",
+                "OtherDate01": "02.09.2019",
+                "profit": 0.25199999999999995
+            },
+            {
+                "Date": "01\\10\\2019",
+                "OtherDate": "/Date(1551790793046)/",
+                "OtherDate01": "02.10.2019",
+                "profit": 0.21209999999999996
+            },
+            {
+                "Date": "01\\01\\2019",
+                "OtherDate": "/Date(1551790757046)/",
+                "OtherDate01": "02.11.2019",
+                "profit": 0.21209999999999996
+            },
+            {
+                "Date": "01\\02\\2019",
+                "OtherDate": "/Date(1551790764246)/",
+                "OtherDate01": "02.12.2019",
+                "profit": 0.18479999999999996
+            },
+            {
+                "Date": "01\\03\\2019",
+                "OtherDate": "/Date(1551790767846)/",
+                "OtherDate01": "02.13.2019",
+                "profit": 0.16169999999999998
+            },
+            {
+                "Date": "01\\04\\2019",
+                "OtherDate": "/Date(1551790771446)/",
+                "OtherDate01": "02.14.2019",
+                "profit": 0.23309999999999997
+            },
+            {
+                "Date": "01\\05\\2019",
+                "OtherDate": "/Date(1551790775046)/",
+                "OtherDate01": "02.15.2019",
+                "profit": 0.20789999999999997
+            },
+            {
+                "Date": "01\\06\\2019",
+                "OtherDate": "/Date(1551790778646)/",
+                "OtherDate01": "02.16.2019",
+                "profit": 0.23309999999999997
+            },
+            {
+                "Date": "01\\07\\2019",
+                "OtherDate": "/Date(1551790782246)/",
+                "OtherDate01": "02.17.2019",
+                "profit": 0.25619999999999993
+            },
+            {
+                "Date": "01\\08\\2019",
+                "OtherDate": "/Date(1551790785846)/",
+                "OtherDate01": "02.18.2019",
+                "profit": 0.2793
+            },
+            {
+                "Date": "01\\09\\2019",
+                "OtherDate": "/Date(1551790789446)/",
+                "OtherDate01": "02.19.2019",
+                "profit": 0.25199999999999995
+            },
+            {
+                "Date": "01\\10\\2019",
+                "OtherDate": "/Date(1551790793046)/",
+                "OtherDate01": "02.20.2019",
+                "profit": 0.21209999999999996
+            },
+            {
+                "Date": "01\\01\\2019",
+                "OtherDate": "/Date(1551790757046)/",
+                "OtherDate01": "02.21.2019",
+                "profit": 0.21209999999999996
+            },
+            {
+                "Date": "01\\02\\2019",
+                "OtherDate": "/Date(1551790764246)/",
+                "OtherDate01": "02.22.2019",
+                "profit": 0.18479999999999996
+            },
+            {
+                "Date": "01\\03\\2019",
+                "OtherDate": "/Date(1551790767846)/",
+                "OtherDate01": "02.23.2019",
+                "profit": 0.16169999999999998
+            },
+            {
+                "Date": "01\\04\\2019",
+                "OtherDate": "/Date(1551790771446)/",
+                "OtherDate01": "02.24.2019",
+                "profit": 0.23309999999999997
+            },
+            {
+                "Date": "01\\05\\2019",
+                "OtherDate": "/Date(1551790775046)/",
+                "OtherDate01": "02.25.2019",
+                "profit": 0.20789999999999997
+            },
+            {
+                "Date": "01\\06\\2019",
+                "OtherDate": "/Date(1551790778646)/",
+                "OtherDate01": "02.26.2019",
+                "profit": 0.23309999999999997
+            },
+            {
+                "Date": "01\\07\\2019",
+                "OtherDate": "/Date(1551790782246)/",
+                "OtherDate01": "02.27.2019",
+                "profit": 0.25619999999999993
+            },
+            {
+                "Date": "01\\08\\2019",
+                "OtherDate": "/Date(1551790785846)/",
+                "OtherDate01": "02.28.2019",
+                "profit": 0.2793
+            }
+        ]
+    }
+}

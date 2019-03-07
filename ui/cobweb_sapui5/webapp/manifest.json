@@ -1,0 +1,74 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "thingkathon.cobweb_sapui5",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "thingkathon.cobweb_sapui5.view.App",
+			"type": "XML",
+			"async": true
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.f": {},
+				"sap.tnt": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "thingkathon.cobweb_sapui5.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/AppModel.json"
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		}
+		
+	}
+}
