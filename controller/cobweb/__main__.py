@@ -9,6 +9,7 @@ from . import models
 from . import controller
 
 
+
 async def send_message(loop, url):
     from aio_pika import connect_robust, Message, DeliveryMode
 
